@@ -1,0 +1,51 @@
+main{
+    background-color: rgb(40, 40, 40);
+    height: 100vh;
+    padding-top: 10vh;
+
+}
+
+.ms_btn{
+    background-color: aliceblue;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: 0.5;
+    position: absolute;
+}
+
+.up-btn{
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.dwn-btn{
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.ms_slider{
+    height: 80%;
+}
+
+.ms_container{
+    background-color: black;
+    height: 80vh;
+    position: relative;
+    box-shadow: 0 0 50px 10px rgb(141, 120, 108);
+}
+
+.ms_item{
+    height: 80vh;
+}
+
+.ms_item img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
