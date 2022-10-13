@@ -39,7 +39,7 @@ main{
 
 .ms_container{
     height: 80vh;
-    box-shadow: 0 0 50px 10px rgb(141, 120, 108);
+    box-shadow: 0 0 50px 10px rgb(49, 49, 49);
     display: flex;
 }
 .ms_carousel{

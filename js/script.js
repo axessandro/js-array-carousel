@@ -41,70 +41,52 @@ carouselItems[carouselPosition].classList.add("active-carousel")
 // Navigation
 // dwnBtn at click
 dwnBtn.addEventListener("click", function(){
-    if (sliderPosition < imgs.length -1) {
-        // Remove .active to sliderPosition
-        items[sliderPosition].classList.remove("active");
-        // Remove .active-carousel to carouselPosition  
-        carouselItems[carouselPosition].classList.remove("active-carousel");
 
+    // Remove .active to sliderPosition
+    items[sliderPosition].classList.remove("active");
+    // Remove .active-carousel to carouselPosition  
+    carouselItems[carouselPosition].classList.remove("active-carousel");
+    
+    if (sliderPosition < imgs.length -1) {
         // sliderPosition + 1
         sliderPosition++;
         // carouselPosition +1
         carouselPosition++;
-
-        // Add .active to next sliderPosiiton
-        items[sliderPosition].classList.add("active");
-        // Add .active-carousel to next carouselPosition
-        carouselItems[carouselPosition].classList.add("active-carousel")
     } else {
-        // Remove .active to sliderPosition
-        items[sliderPosition].classList.remove("active");
-        // Remove .active-carousel to carouselPosition  
-        carouselItems[carouselPosition].classList.remove("active-carousel");
-
         // sliderPosition = 0
         sliderPosition = 0;
         // carouselPosition = 0
         carouselPosition = 0;
-
-        // Add .active to next sliderPosiiton
-        items[sliderPosition].classList.add("active");
-        // Add .active-carousel to next carouselPosition
-        carouselItems[carouselPosition].classList.add("active-carousel")
     }
+
+    // Add .active to next sliderPosiiton
+    items[sliderPosition].classList.add("active");
+    // Add .active-carousel to next carouselPosition
+    carouselItems[carouselPosition].classList.add("active-carousel")
 })
 
 // upBtn at click
 upBtn.addEventListener("click", function(){
-    if (sliderPosition > 0) {
-        // Remove .active to sliderPosition
-        items[sliderPosition].classList.remove("active");
-        // Remove .active-carousel to carouselPosition  
-        carouselItems[carouselPosition].classList.remove("active-carousel");
 
+    // Remove .active to sliderPosition
+    items[sliderPosition].classList.remove("active");
+    // Remove .active-carousel to carouselPosition  
+    carouselItems[carouselPosition].classList.remove("active-carousel");
+
+    if (sliderPosition > 0) {
         // sliderPosition - 1
         sliderPosition--;
         // carouselPosition - 1
         carouselPosition--;
-
-        // Add .active to next sliderPosiiton
-        items[sliderPosition].classList.add("active");
-        // Add .active-carousel to next carouselPosition
-        carouselItems[carouselPosition].classList.add("active-carousel")
     } else {
-        // Remove .active to sliderPosition
-        items[sliderPosition].classList.remove("active");
-        // Remove .active-carousel to carouselPosition  
-        carouselItems[carouselPosition].classList.remove("active-carousel");
-
         // sliderPosition = imgs.length
         sliderPosition = imgs.length -1;
         // carouselPosition = imgs.length
         carouselPosition = imgs.length -1;
-
-        // Add .active to next sliderPosiiton
-        items[sliderPosition].classList.add("active");
-        // Add .active-carousel to next carouselPosition
-        carouselItems[carouselPosition].classList.add("active-carousel")
     } 
+    
+    // Add .active to next sliderPosiiton
+    items[sliderPosition].classList.add("active");
+    // Add .active-carousel to next carouselPosition
+    carouselItems[carouselPosition].classList.add("active-carousel")
 })
